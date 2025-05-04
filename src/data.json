@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "title": "Imagen 1",
+      "description": "Descripción de la imagen 1.",
+      "user": "Usuario1",
+      "imageUrl": "assets/img/image1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Imagen 2",
+      "description": "Descripción de la imagen 2.",
+      "user": "Usuario2",
+      "imageUrl": "assets/img/image2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Imagen 3",
+      "description": "Descripción de la imagen 3.",
+      "user": "Usuario3",
+      "imageUrl": "assets/img/image3.jpg"
+    }
+  ]
+  
