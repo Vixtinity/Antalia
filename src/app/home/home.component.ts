@@ -21,17 +21,20 @@ export class HomeComponent {
   data: Item[] = [];
 
   constructor(private http: HttpClient) {
-    this.loadData();
+    this.loadData(); // 👈 aquí
   }
+  
 
   loadData() {
-    this.http.get<Item[]>('/assets/data.json').subscribe(
+    this.http.get<Item[]>('http://localhost:3000/api/data').subscribe(
       (response) => {
         this.data = response;
+        console.log('Datos cargados:', this.data);
       },
       (error) => {
-        console.error('Error loading data', error);
+        console.error('Error al cargar los datos:', error);
       }
     );
   }
+  
 }

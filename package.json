@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "concurrently \"ng serve\" \"node server.js\"",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:Antalia": "node dist/antalia/server/server.mjs"
+    "serve:ssr:Antalia": "node server.js"
   },
   "private": true,
   "dependencies": {
@@ -21,7 +21,7 @@
     "@angular/router": "^19.2.0",
     "@angular/ssr": "^19.2.10",
     "bootstrap": "^5.3.5",
-    "express": "^4.18.2",
+    "express": "^4.21.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
@@ -40,5 +40,18 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.7.2"
-  }
+  },
+  "description": "This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vixtinity/Antalia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vixtinity/Antalia/issues"
+  },
+  "homepage": "https://github.com/Vixtinity/Antalia#readme"
 }

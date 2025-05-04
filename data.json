@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Imagen 1",
+    "description": "Descripción de la imagen 1.",
+    "user": "Usuario1",
+    "userId": 1,
+    "imageUrl": "img/imagen1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Imagen 2",
+    "description": "Descripción de la imagen 2.",
+    "user": "Usuario2",
+    "userId": 2,
+    "imageUrl": "img/imagen2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Imagen 3",
+    "description": "Descripción de la imagen 3.",
+    "user": "Luis",
+    "userId": 3,
+    "imageUrl": "img/imagen3.jpg"
+  }
+]
