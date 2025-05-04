@@ -1,5 +1,11 @@
-<div class="container">
-    <h1 class="mt-4">Bienvenido a la página de inicio</h1>
-    <p>Este es el contenido principal del componente Home.</p>
+<div *ngFor="let item of data" class="card">
+    <h3>{{ item.title }}</h3>
+    <p>{{ item.description }}</p>
+  
+    <!-- Mostrar imagen si existe imageUrl -->
+    <img *ngIf="item.imageUrl" [src]="item.imageUrl" [alt]="item.title" class="img-fluid">
+  
+    <!-- Mostrar nombre de usuario -->
+    <p><strong>Subido por:</strong> {{ item.user }}</p>
   </div>
   
