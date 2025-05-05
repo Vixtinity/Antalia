@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Imagen 1",
     "description": "Descripción de la imagen 1.",
-    "user": "Usuario1",
+    "user": "Vixtinity",
     "userId": 1,
     "imageUrl": "img/imagen1.jpg"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "title": "Imagen 2",
     "description": "Descripción de la imagen 2.",
-    "user": "Usuario2",
+    "user": "ArtsyMinds",
     "userId": 2,
     "imageUrl": "img/imagen2.jpg"
   },
@@ -19,8 +19,177 @@
     "id": 3,
     "title": "Imagen 3",
     "description": "Descripción de la imagen 3.",
-    "user": "Luis",
+    "user": "noah.png",
     "userId": 3,
     "imageUrl": "img/imagen3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Imagen 4",
+    "description": "Descripción de la imagen 4.",
+    "user": "sylviathecute",
+    "userId": 4,
+    "imageUrl": "img/imagen4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Imagen 5",
+    "description": "Descripción de la imagen 5.",
+    "user": "Vixtinity",
+    "userId": 1,
+    "imageUrl": "img/imagen5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Imagen 6",
+    "description": "Descripción de la imagen 6.",
+    "user": "Vogba",
+    "userId": 5,
+    "imageUrl": "img/imagen6.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Imagen 7",
+    "description": "Descripción de la imagen 7.",
+    "user": "DreamySketch",
+    "userId": 6,
+    "imageUrl": "img/imagen7.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Imagen 8",
+    "description": "Descripción de la imagen 8.",
+    "user": "Vixtinity",
+    "userId": 1,
+    "imageUrl": "img/imagen8.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Imagen 9",
+    "description": "Descripción de la imagen 9.",
+    "user": "LunaSketches",
+    "userId": 7,
+    "imageUrl": "img/imagen9.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Imagen 10",
+    "description": "Descripción de la imagen 10.",
+    "user": "ArtsyMinds",
+    "userId": 2,
+    "imageUrl": "img/imagen10.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Imagen 11",
+    "description": "Descripción de la imagen 11.",
+    "user": "DreamySketch",
+    "userId": 6,
+    "imageUrl": "img/imagen11.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Imagen 12",
+    "description": "Descripción de la imagen 12.",
+    "user": "noah.png",
+    "userId": 3,
+    "imageUrl": "img/imagen12.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Imagen 13",
+    "description": "Descripción de la imagen 13.",
+    "user": "sylviathecute",
+    "userId": 4,
+    "imageUrl": "img/imagen13.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Imagen 14",
+    "description": "Descripción de la imagen 14.",
+    "user": "Vixtinity",
+    "userId": 1,
+    "imageUrl": "img/imagen14.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Imagen 15",
+    "description": "Descripción de la imagen 15.",
+    "user": "LunaSketches",
+    "userId": 7,
+    "imageUrl": "img/imagen15.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Imagen 16",
+    "description": "Descripción de la imagen 16.",
+    "user": "Vogba",
+    "userId": 5,
+    "imageUrl": "img/imagen16.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Imagen 17",
+    "description": "Descripción de la imagen 17.",
+    "user": "noah.png",
+    "userId": 3,
+    "imageUrl": "img/imagen17.jpg"
+  },
+  {
+    "id": 18,
+    "title": "Imagen 18",
+    "description": "Descripción de la imagen 18.",
+    "user": "DreamySketch",
+    "userId": 6,
+    "imageUrl": "img/imagen18.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Imagen 19",
+    "description": "Descripción de la imagen 19.",
+    "user": "LunaSketches",
+    "userId": 7,
+    "imageUrl": "img/imagen19.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Imagen 20",
+    "description": "Descripción de la imagen 20.",
+    "user": "Vogba",
+    "userId": 5,
+    "imageUrl": "img/imagen20.jpg"
+  },
+  {
+    "id": 21,
+    "title": "Imagen 21",
+    "description": "Descripción de la imagen 21.",
+    "user": "PixelMuse",
+    "userId": 7,
+    "imageUrl": "img/imagen21.jpg"
+  },
+  {
+    "id": 22,
+    "title": "Imagen 22",
+    "description": "Descripción de la imagen 22.",
+    "user": "JudgementKazzy",
+    "userId": 8,
+    "imageUrl": "img/imagen22.jpg"
+  },
+  {
+    "id": 23,
+    "title": "Imagen 23",
+    "description": "Descripción de la imagen 23.",
+    "user": "JudgementKazzy",
+    "userId": 3,
+    "imageUrl": "img/imagen23.jpg"
+  },
+  {
+    "id": 24,
+    "title": "Imagen 24",
+    "description": "Descripción de la imagen 24.",
+    "user": "Vogba",
+    "userId": 1,
+    "imageUrl": "img/imagen24.jpg"
   }
+  
 ]

@@ -17,6 +17,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 </main>
 
   `,
+  
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
