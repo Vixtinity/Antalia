@@ -15,7 +15,8 @@ export const routes: Routes = [
   },
   {
     path: 'usuario/:id',
-    component: UsuarioDetalleComponent
+    component: UsuarioDetalleComponent,
+    data: { renderMode: 'client' }
   },
   {
     path: '**',
