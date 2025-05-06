@@ -15,7 +15,7 @@ interface Item {
   selector: 'app-home',
   standalone: true,
   imports: [CommonModule, HttpClientModule, NgFor, RouterModule],
-  templateUrl: './home.component.html',
+  templateUrl:'./home.component.html',
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
@@ -34,8 +34,8 @@ export class HomeComponent {
   loadData() {
     this.http.get<Item[]>('http://localhost:3000/api/data').subscribe(
       (response) => {
-        this.shuffleArray(response); // Mezcla los datos aquí
-        this.data = response;        // Y luego los asignas
+        this.shuffleArray(response);
+        this.data = response;
         console.log('Datos cargados (mezclados):', this.data);
       },
       (error) => {
