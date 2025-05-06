@@ -10,7 +10,8 @@ export const routes: Routes = [
   },
   {
     path: 'imagen/:id',
-    component: ImagenDetalleComponent
+    component: ImagenDetalleComponent,
+    data: { renderMode: 'client' }
   },
   {
     path: 'usuario/:id',

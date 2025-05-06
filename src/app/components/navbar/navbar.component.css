@@ -1,4 +1,19 @@
-.bg-marron {
-    background-color: #865d3f !important; /* Marrón tipo 'saddlebrown' */
-  }
+/* Establece la barra lateral fija */
+/* Barra lateral fija a la izquierda */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #865d3f;
+  z-index: 1050;
+  padding-top: 20px;
+  overflow-y: auto;
+}
 
+.content {
+  margin-left: 200px;
+  padding: 20px;
+  min-height: 100vh;
+}

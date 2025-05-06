@@ -1,1 +1,13 @@
-<p>imagen-detalle works!</p>
+<div class="container mt-4" *ngIf="imagen">
+  <div class="row">
+    <div class="col-md-6">
+      <img [src]="imagen.imageUrl" [alt]="imagen.title" class="img-fluid rounded shadow">
+    </div>
+
+    <div class="col-md-6 d-flex flex-column justify-content-center">
+      <h2 class="mb-3">{{ imagen.title }}</h2>
+      <p><strong>Subido por:</strong> {{ imagen.user }}</p>
+      <p>{{ imagen.description }}</p>
+    </div>
+  </div>
+</div>
