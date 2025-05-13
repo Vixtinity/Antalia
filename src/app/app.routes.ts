@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ImagenDetalleComponent } from './imagen-detalle/imagen-detalle.component';
 import { UsuarioDetalleComponent } from './usuario-detalle/usuario-detalle.component';
+import { SubirElementoComponent } from './subir-elemento/subir-elemento.component';
 
 export const routes: Routes = [
   {
@@ -19,7 +20,11 @@ export const routes: Routes = [
     data: { renderMode: 'client' }
   },
   {
+    path: 'subirelemento',
+    loadComponent: () => import('./subir-elemento/subir-elemento.component').then(m => m.SubirElementoComponent)
+  },
+  {
     path: '**',
     redirectTo: ''
-  }
+  },
 ];
