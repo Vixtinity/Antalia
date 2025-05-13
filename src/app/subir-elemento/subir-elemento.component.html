@@ -1,0 +1,30 @@
+<div class="container mt-4">
+    <h2>Subir nueva imagen</h2>
+    <form (ngSubmit)="onSubmit()" #form="ngForm">
+  
+      <div class="mb-3">
+        <label for="title" class="form-label">Título</label>
+        <input type="text" id="title" class="form-control" [(ngModel)]="nuevoElemento.title" name="title" required>
+      </div>
+  
+      <div class="mb-3">
+        <label for="description" class="form-label">Descripción</label>
+        <textarea id="description" class="form-control" [(ngModel)]="nuevoElemento.description" name="description" required></textarea>
+      </div>
+  
+      <div class="mb-3">
+        <label for="user" class="form-label">Usuario</label>
+        <select id="user" class="form-select" [(ngModel)]="nuevoElemento.user" name="user" required (change)="asignarUserId()">
+          <option *ngFor="let user of usuarios" [value]="user.name">{{ user.name }}</option>
+        </select>
+      </div>
+  
+      <div class="mb-3">
+        <label for="image" class="form-label">Imagen</label>
+        <input type="file" id="image" (change)="onFileChange($event)" class="form-control" accept="image/*" required>
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Subir</button>
+    </form>
+  </div>
+  
