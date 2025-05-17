@@ -5,7 +5,7 @@
     "description": "Poster del anime",
     "user": "Vixtinity",
     "userId": 1,
-    "imageUrl": "img/imagen1.jpg"
+    "imageUrl": "img/imagenes/imagen1.jpg"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "description": "Descripción de la imagen 2.",
     "user": "ArtsyMinds",
     "userId": 2,
-    "imageUrl": "img/imagen2.jpg"
+    "imageUrl": "img/imagenes/imagen2.jpg"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "description": "Descripción de la imagen 3.",
     "user": "noah.png",
     "userId": 3,
-    "imageUrl": "img/imagen3.jpg"
+    "imageUrl": "img/imagenes/imagen3.jpg"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "description": "Imagen sacada de Pixabay",
     "user": "sylviathecute",
     "userId": 4,
-    "imageUrl": "img/imagen4.jpg"
+    "imageUrl": "img/imagenes/imagen4.jpg"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "description": "Imagen promocional de Cowboy Bebop",
     "user": "Vixtinity",
     "userId": 1,
-    "imageUrl": "img/imagen5.jpg"
+    "imageUrl": "img/imagenes/imagen5.jpg"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "description": "Descripción de la imagen 6.",
     "user": "Vogba",
     "userId": 5,
-    "imageUrl": "img/imagen6.jpg"
+    "imageUrl": "img/imagenes/imagen6.jpg"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "description": "Descripción de la imagen 7.",
     "user": "DreamySketch",
     "userId": 6,
-    "imageUrl": "img/imagen7.jpg"
+    "imageUrl": "img/imagenes/imagen7.jpg"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "description": "Tyler, The Creator",
     "user": "Vixtinity",
     "userId": 1,
-    "imageUrl": "img/imagen8.jpg"
+    "imageUrl": "img/imagenes/imagen8.jpg"
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "description": "Imagen sacada de Pixabay",
     "user": "LunaSketches",
     "userId": 7,
-    "imageUrl": "img/imagen9.jpg"
+    "imageUrl": "img/imagenes/imagen9.jpg"
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "description": "Imagen de Pixabay",
     "user": "ArtsyMinds",
     "userId": 2,
-    "imageUrl": "img/imagen10.jpg"
+    "imageUrl": "img/imagenes/imagen10.jpg"
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@
     "description": "Imagen sacada de Pixabay",
     "user": "DreamySketch",
     "userId": 6,
-    "imageUrl": "img/imagen11.jpg"
+    "imageUrl": "img/imagenes/imagen11.jpg"
   },
   {
     "id": 12,
@@ -93,7 +93,7 @@
     "description": "Portada del album 'Papota' de Ca7riel y Paco Amoroso",
     "user": "noah.png",
     "userId": 3,
-    "imageUrl": "img/imagen12.jpg"
+    "imageUrl": "img/imagenes/imagen12.jpg"
   },
   {
     "id": 13,
@@ -101,7 +101,7 @@
     "description": "Descripción de la imagen 13.",
     "user": "sylviathecute",
     "userId": 4,
-    "imageUrl": "img/imagen13.jpg"
+    "imageUrl": "img/imagenes/imagen13.jpg"
   },
   {
     "id": 14,
@@ -109,7 +109,7 @@
     "description": "Portada del album 'Por Cesarea' de Dillom",
     "user": "Vixtinity",
     "userId": 1,
-    "imageUrl": "img/imagen14.jpg"
+    "imageUrl": "img/imagenes/imagen14.jpg"
   },
   {
     "id": 15,
@@ -117,7 +117,7 @@
     "description": "Imagen sacada de Pixabay",
     "user": "LunaSketches",
     "userId": 7,
-    "imageUrl": "img/imagen15.jpg"
+    "imageUrl": "img/imagenes/imagen15.jpg"
   },
   {
     "id": 16,
@@ -125,7 +125,7 @@
     "description": "Descripción de la imagen 16.",
     "user": "Vogba",
     "userId": 5,
-    "imageUrl": "img/imagen16.jpg"
+    "imageUrl": "img/imagenes/imagen16.jpg"
   },
   {
     "id": 17,
@@ -133,7 +133,7 @@
     "description": "Imagen sacada de Pixabay",
     "user": "noah.png",
     "userId": 3,
-    "imageUrl": "img/imagen17.jpg"
+    "imageUrl": "img/imagenes/imagen17.jpg"
   },
   {
     "id": 18,
@@ -141,7 +141,7 @@
     "description": "Imagen sacada de Pixabay",
     "user": "DreamySketch",
     "userId": 6,
-    "imageUrl": "img/imagen18.jpg"
+    "imageUrl": "img/imagenes/imagen18.jpg"
   },
   {
     "id": 19,
@@ -149,7 +149,7 @@
     "description": "Imagen sacada de Pixabay",
     "user": "LunaSketches",
     "userId": 7,
-    "imageUrl": "img/imagen19.jpg"
+    "imageUrl": "img/imagenes/imagen19.jpg"
   },
   {
     "id": 20,
@@ -157,15 +157,15 @@
     "description": "Descripción de la imagen 20.",
     "user": "Vogba",
     "userId": 5,
-    "imageUrl": "img/imagen20.jpg"
+    "imageUrl": "img/imagenes/imagen20.jpg"
   },
   {
     "id": 21,
     "title": "Diploma",
     "description": "Imagen sacada de Pixabay",
     "user": "PixelMuse",
-    "userId": 7,
-    "imageUrl": "img/imagen21.jpg"
+    "userId": 9,
+    "imageUrl": "img/imagenes/imagen21.jpg"
   },
   {
     "id": 22,
@@ -173,22 +173,22 @@
     "description": "Miau",
     "user": "JudgementKazzy",
     "userId": 8,
-    "imageUrl": "img/imagen22.jpg"
+    "imageUrl": "img/imagenes/imagen22.jpg"
   },
   {
     "id": 23,
     "title": "Ichiban y Nanci",
     "description": "Ni idea de que ponerle a esto",
     "user": "JudgementKazzy",
-    "userId": 3,
-    "imageUrl": "img/imagen23.jpg"
+    "userId": 8,
+    "imageUrl": "img/imagenes/imagen23.jpg"
   },
   {
     "id": 24,
     "title": "Imagen 24",
     "description": "Descripción de la imagen 24.",
     "user": "Vogba",
-    "userId": 1,
-    "imageUrl": "img/imagen24.jpg"
-  }
+    "userId": 5,
+    "imageUrl": "img/imagenes/imagen24.jpg"
+  } 
 ]

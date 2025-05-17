@@ -14,6 +14,16 @@ app.get('/api/usuarios', (req, res) => {
   const usuarios = JSON.parse(fs.readFileSync('./usuarios.json', 'utf-8'));
   res.json(usuarios);
 });
+app.get('/api/usuarios/:id', (req, res) => {
+  const usuarios = JSON.parse(fs.readFileSync('./usuarios.json', 'utf-8'));
+  const id = parseInt(req.params.id);
+  const usuario = usuarios.find(u => u.id === id);
+  if (usuario) {
+    res.json(usuario);
+  } else {
+    res.status(404).json({ message: 'Usuario no encontrado' });
+  }
+});
 
 // Endpoint para obtener data (archivo JSON)
 app.get('/api/data', (req, res) => {

@@ -1,16 +1,43 @@
-<div class="masonry-container">
-  <div class="masonry-card" *ngFor="let item of data">
-    <a [routerLink]="['/imagen', item.id]">
-      <img *ngIf="item.imageUrl"
-           [src]="item.imageUrl"
-           [alt]="item.title"
-           class="img-fluid"
-           style="width: 100%; border-radius: 10px; margin-bottom: 10px; cursor: pointer;">
-    </a>
-    <div class="card-body">
-      <h5 class="card-title">{{ item.title }}</h5>
-      <p class="card-text">{{ item.description }}</p>
-      <p><strong>Subido por:</strong> {{ item.user }}</p>
+<div class="container">
+  <h1>Galería de Imágenes</h1>
+
+  <!-- Barra de búsqueda -->
+  <div class="input-group mb-3">
+    <input 
+      type="text" 
+      class="form-control" 
+      placeholder="Buscar imagen por nombre" 
+      [(ngModel)]="searchQuery">
+    <button 
+      class="btn btn-outline-secondary" 
+      type="button" 
+      (click)="onSearch()">
+      Buscar
+    </button>
+  </div>
+  
+  <!-- Galería de imágenes -->
+  <div class="masonry-container">
+    <div class="masonry-card" *ngFor="let item of filteredData">
+      <a [routerLink]="['/imagen', item.id]">
+        <img *ngIf="item.imageUrl"
+             [src]="item.imageUrl"
+             [alt]="item.title"
+             class="img-fluid"
+             style="width: 100%; border-radius: 10px; margin-bottom: 10px; cursor: pointer;">
+      </a>
+      <div class="card-body">
+        <h5 class="card-title">{{ item.title }}</h5>
+        <p class="card-text">{{ item.description }}</p>
+        <p>
+          <strong>Subido por:</strong>
+          <a 
+            [routerLink]="['/usuario', item.userId]" 
+            style="text-decoration: none; color: #007bff; cursor: pointer;">
+            {{ item.user }}
+          </a>
+        </p>
+      </div>
     </div>
   </div>
 </div>

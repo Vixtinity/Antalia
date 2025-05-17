@@ -21,4 +21,9 @@ export class ImagenDetalleService {
   getImagenById(id: number): Observable<Imagen> {
     return this.http.get<Imagen>(`${this.apiUrl}/${id}`);
   }
+
+  getImagenes(): Observable<Imagen[]> {
+    return this.http.get<Imagen[]>(this.apiUrl);
+  }
 }
+

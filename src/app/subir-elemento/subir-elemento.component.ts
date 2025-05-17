@@ -36,7 +36,7 @@ export class SubirElementoComponent {
   onFileChange(event: any) {
     const archivo = event.target.files[0];
     if (archivo) {
-      this.nuevoElemento.imageUrl = 'img/' + archivo.name; // Asumes que ya subiste la imagen al backend por separado
+      this.nuevoElemento.imageUrl = 'img/imagenes/' + archivo.name; // Asumes que ya subiste la imagen al backend por separado
     }
   }
 
