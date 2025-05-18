@@ -1,9 +1,9 @@
-// src/app/usuario-detalle/usuario-detalle.component.ts
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { UsuarioDetalleService, Usuario } from '../services/services/usuario-detalles.service';
+import { ImagenDetalleService, Imagen } from '../services/imagen-detalles.service';
 
 @Component({
   selector: 'app-usuario-detalle',
@@ -14,10 +14,12 @@ import { UsuarioDetalleService, Usuario } from '../services/services/usuario-det
 })
 export class UsuarioDetalleComponent implements OnInit {
   usuario: Usuario | null = null;
+  imagenesUsuario: Imagen[] = [];
 
   constructor(
     private route: ActivatedRoute,
-    private usuarioService: UsuarioDetalleService
+    private usuarioService: UsuarioDetalleService,
+    private imagenService: ImagenDetalleService
   ) {}
 
   ngOnInit(): void {
@@ -25,7 +27,15 @@ export class UsuarioDetalleComponent implements OnInit {
     if (idParam) {
       const id = Number(idParam);
       this.usuarioService.getUsuarioById(id).subscribe(
-        (data) => this.usuario = data,
+        (usuarioData) => {
+          this.usuario = usuarioData;
+          this.imagenService.getImagenes().subscribe(
+            (imagenes) => {
+              this.imagenesUsuario = imagenes.filter(img => img.userId === id);
+            },
+            (error) => console.error('Error al cargar las imágenes:', error)
+          );
+        },
         (error) => console.error('Error al cargar el usuario:', error)
       );
     } else {

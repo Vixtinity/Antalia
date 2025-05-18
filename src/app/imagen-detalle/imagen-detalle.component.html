@@ -6,7 +6,11 @@
 
     <div class="col-md-6 d-flex flex-column justify-content-center">
       <h2 class="mb-3">{{ imagen.title }}</h2>
-      <p><strong>Subido por:</strong> {{ imagen.user }}</p>
+                <a 
+            [routerLink]="['/usuario', imagen.userId]" 
+            style="text-decoration: none; color: #007bff; cursor: pointer;">
+            {{ imagen.user }}
+          </a>
       <p>{{ imagen.description }}</p>
     </div>
   </div>

@@ -7,6 +7,7 @@ export interface Imagen {
   title: string;
   description: string;
   imageUrl?: string;
+  userId: number;
   user: string;
 }
 
