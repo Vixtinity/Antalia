@@ -1,39 +1,44 @@
-<base href="/">
+<base href="/" />
+
+<!-- Botón toggle solo visible en móvil -->
+<button class="btn btn-dark d-sm-none toggle-btn" (click)="toggleSidebar()">
+  ☰
+</button>
 
 <div class="container-fluid">
   <div class="row">
-    <div class="sidebar text-white">
-      <div class="d-flex flex-sm-column flex-row flex-nowrap align-items-center">
+    
+    <!-- Sidebar -->
+    <div class="sidebar text-white" [class.open]="isSidebarOpen">
+      <div class="d-flex flex-column align-items-center w-100">
+
         
         <!-- Logo -->
         <a routerLink="/" class="d-block p-3 link-light text-decoration-none" title="Inicio">
           <img src="img/logo.png" alt="Logo" style="width: 100px;">
         </a>
 
-        <!-- Menú de navegación -->
-        <ul class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center align-items-center">
-          
-          <!-- Enlace al Home -->
+        <!-- Menú -->
+        <ul class="nav nav-pills nav-flush flex-column mb-auto mx-auto text-center align-items-center">
           <li class="nav-item">
             <a routerLink="/" class="nav-link py-3 px-2 link-light" title="Home">
               <img src="img/navhome.png" alt="Home" style="width: 30px; height: 30px;">
             </a>
           </li>
-
-          <!-- Enlace a Subir Elemento -->
           <li class="nav-item">
             <a routerLink="/subirelemento" class="nav-link py-3 px-2 link-light" title="Subir Elemento">
               <img src="img/upload.png" alt="Subir Elemento" style="width: 30px; height: 30px;">
             </a>
           </li>
-
         </ul>
       </div>
     </div>
+    
 
-    <!-- Contenido de la página -->
+    <!-- Contenido -->
     <div class="content">
       <router-outlet></router-outlet>
     </div>
+
   </div>
 </div>

@@ -1,32 +1,82 @@
+/* Contenedor tipo Masonry */
+body{
+    background-color: #FCEFCB; /* Fondo general suave */
+}
 .masonry-container {
-  column-count: 4;
+  column-count: 1;
   column-gap: 1rem;
+  background-color: #FCEFCB; /* Fondo general suave */
   padding: 1rem;
 }
 
-@media (max-width: 1200px) {
-  .masonry-container {
-    column-count: 3;
-  }
-}
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .masonry-container {
     column-count: 2;
   }
 }
-@media (max-width: 576px) {
+
+@media (min-width: 992px) {
   .masonry-container {
-    column-count: 1;
+    column-count: 3;
   }
 }
 
-.masonry-card {
-  background: white;
-  display: inline-block;
-  margin-bottom: 1rem;
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+@media (min-width: 1200px) {
+  .masonry-container {
+    column-count: 4;
+  }
 }
-  
+
+/* Cada tarjeta dentro del masonry */
+.masonry-card {
+  break-inside: avoid;
+  background-color: #FAD59A; /* Fondo de tarjeta */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  display: block;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+  border: 1px solid #A86523; /* Borde elegante */
+}
+
+.masonry-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Imagen dentro de la tarjeta */
+.masonry-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Ajustes de texto */
+.card-body {
+  padding: 0.5rem 0;
+  color: #A86523; /* Texto principal */
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: #E9A319; /* Título con acento dorado */
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #A86523;
+}
+
+/* Enlace a usuario */
+.card-text a {
+  color: #E9A319; /* Dorado vibrante */
+  text-decoration: none;
+}
+
+.card-text a:hover {
+  text-decoration: underline;
+}

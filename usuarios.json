@@ -8,7 +8,7 @@
     { 
       "id": 2, 
       "name": "ArtsyMinds", 
-      "profileImage": "img/ususarios/artsyminds.jpg", 
+      "profileImage": "img/usuarios/ArtsyMinds.jpg", 
       "description": "Creador visual que explora diferentes estilos de arte digital y tradicional." 
     },
     { 
@@ -38,7 +38,7 @@
     { 
       "id": 7, 
       "name": "LunaSketches", 
-      "profileImage": "img/usuarios/lunasketches.jpg", 
+      "profileImage": "img/usuarios/lunaSketches.jpg", 
       "description": "Artista digital que disfruta de ilustrar escenas del espacio y el misterio." 
     },
     { 
