@@ -14,6 +14,7 @@ import { ImagenDetalleService, Imagen } from '../services/imagen-detalles.servic
 })
 export class ImagenDetalleComponent implements OnInit {
   imagen: Imagen | null = null;
+imagenesDelUsuario: Imagen[] = [];
 
   constructor(
     private route: ActivatedRoute,

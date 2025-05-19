@@ -1,17 +1,24 @@
-<div class="container mt-4" *ngIf="imagen">
-  <div class="row">
-    <div class="col-md-6 image-container">
-      <img [src]="imagen.imageUrl" [alt]="imagen.title" class="img-fluid rounded shadow">
-    </div>
+<body>
+  <div class="detalle-wrapper" *ngIf="imagen">
+    <div class="detalle-container">
+      
+      <!-- Imagen -->
+      <div class="image-container">
+        <img 
+          [src]="imagen.imageUrl" 
+          [alt]="imagen.title" 
+          class="img-fluid" />
+      </div>
 
-    <div class="col-md-6 d-flex flex-column justify-content-center">
-      <h2 class="mb-3">{{ imagen.title }}</h2>
-                <a 
-            [routerLink]="['/usuario', imagen.userId]" 
-            style="text-decoration: none; color: #007bff; cursor: pointer;">
-            {{ imagen.user }}
-          </a>
-      <p>{{ imagen.description }}</p>
+      <!-- Texto -->
+      <div class="text-container">
+        <h2>{{ imagen.title }}</h2>
+        <a [routerLink]="['/usuario', imagen.userId]">
+          {{ imagen.user }}
+        </a>
+        <p>{{ imagen.description }}</p>
+      </div>
+
     </div>
   </div>
-</div>
+</body>
