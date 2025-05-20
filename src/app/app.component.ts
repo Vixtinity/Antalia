@@ -1,20 +1,14 @@
-import { Component } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { RouterOutlet } from '@angular/router';  // Importa RouterOutlet
-import { HomeComponent } from './home/home.component';
-import { SubirElementoComponent } from './subir-elemento/subir-elemento.component';
-
-// Define las rutas directamente en el componente
-const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'subirelemento', component: SubirElementoComponent },
-];
+import { RouterOutlet } from '@angular/router';
+import { filter } from 'rxjs/operators';
+import { FooterComponent } from "./footer/footer.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterModule, NavbarComponent, RouterOutlet], // Importa RouterModule aquí
+  imports: [NavbarComponent, RouterOutlet, FooterComponent],
   template: `
     <main class="d-flex">
       <app-navbar class="sidebar"></app-navbar>
@@ -22,9 +16,24 @@ const routes: Routes = [
         <router-outlet></router-outlet>
       </section>
     </main>
+    <app-footer></app-footer>
   `,
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  constructor(private router: Router, private renderer: Renderer2) {}
+
+  ngOnInit(): void {
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe((event: NavigationEnd) => {
+        if (event.url === '/') {
+          this.renderer.removeClass(document.body, 'center-layout');
+        } else {
+          this.renderer.addClass(document.body, 'center-layout');
+        }
+      });
+  }
+
   title = 'homes';
 }

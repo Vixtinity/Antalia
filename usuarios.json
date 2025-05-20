@@ -2,55 +2,55 @@
     { 
       "id": 1, 
       "name": "Vixtinity", 
-      "profileImage": "img/vixtinity.jpg", 
-      "description": "Artista y creador de contenido con enfoque en anime y música." 
+      "profileImage": "img/usuarios/vixtinity.jpg", 
+      "description": "<-- Soy este" 
     },
     { 
       "id": 2, 
       "name": "ArtsyMinds", 
-      "profileImage": "img/artsyminds.jpg", 
+      "profileImage": "img/usuarios/ArtsyMinds.jpg", 
       "description": "Creador visual que explora diferentes estilos de arte digital y tradicional." 
     },
     { 
       "id": 3, 
       "name": "noah.png", 
-      "profileImage": "img/noah.png", 
+      "profileImage": "img/usuarios/noah.png", 
       "description": "Ilustrador con pasión por los detalles y los fondos complejos." 
     },
     { 
       "id": 4, 
       "name": "sylviathecute", 
-      "profileImage": "img/sylviathecute.jpg", 
+      "profileImage": "img/usuarios/sylvyathecute.jpg", 
       "description": "Dibuja con un estilo tierno y vibrante, siempre en busca de la perfección." 
     },
     { 
       "id": 5, 
       "name": "Vogba", 
-      "profileImage": "img/vogba.jpg", 
-      "description": "Creador digital que explora el arte surrealista y la animación experimental." 
+      "profileImage": "img/usuarios/vogba.jpg", 
+      "description": "Artista de talla mundial" 
     },
     { 
       "id": 6, 
       "name": "DreamySketch", 
-      "profileImage": "img/dreamysketch.jpg", 
+      "profileImage": "img/usuarios/dreamysketch.jpg", 
       "description": "Explora el mundo del arte con un estilo soñador y atmosférico." 
     },
     { 
       "id": 7, 
       "name": "LunaSketches", 
-      "profileImage": "img/lunasketches.jpg", 
+      "profileImage": "img/usuarios/lunaSketches.jpg", 
       "description": "Artista digital que disfruta de ilustrar escenas del espacio y el misterio." 
     },
     { 
       "id": 8, 
       "name": "JudgementKazzy", 
-      "profileImage": "img/judgementkazzy.jpg", 
-      "description": "Conocido por su estilo único que mezcla el arte oscuro y la fantasía." 
+      "profileImage": "img/usuarios/judgementkazzy.jpg", 
+      "description": "El Dragon de Dojima" 
     },
     { 
       "id": 9, 
       "name": "PixelMuse", 
-      "profileImage": "img/pixelmuse.jpg", 
+      "profileImage": "img/usuarios/pixelmuse.jpg", 
       "description": "Artista digital que se especializa en pixel art y estilo retro." 
     }
   ]

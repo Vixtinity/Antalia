@@ -7,6 +7,7 @@ export interface Imagen {
   title: string;
   description: string;
   imageUrl?: string;
+  userId: number;
   user: string;
 }
 
@@ -21,4 +22,9 @@ export class ImagenDetalleService {
   getImagenById(id: number): Observable<Imagen> {
     return this.http.get<Imagen>(`${this.apiUrl}/${id}`);
   }
+
+  getImagenes(): Observable<Imagen[]> {
+    return this.http.get<Imagen[]>(this.apiUrl);
+  }
 }
+

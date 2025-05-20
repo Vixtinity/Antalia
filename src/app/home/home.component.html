@@ -1,16 +1,52 @@
-<div class="masonry-container">
-  <div class="masonry-card" *ngFor="let item of data">
-    <a [routerLink]="['/imagen', item.id]">
-      <img *ngIf="item.imageUrl"
-           [src]="item.imageUrl"
-           [alt]="item.title"
-           class="img-fluid"
-           style="width: 100%; border-radius: 10px; margin-bottom: 10px; cursor: pointer;">
-    </a>
-    <div class="card-body">
-      <h5 class="card-title">{{ item.title }}</h5>
-      <p class="card-text">{{ item.description }}</p>
-      <p><strong>Subido por:</strong> {{ item.user }}</p>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+<body class="">
+  <div class="text-center p-0">
+
+<h1 class="mb-">Galería de Imágenes</h1>
+
+<div class="container py-2">
+  <div class="search-wrapper">
+    <div class="search-box d-flex">
+      <input 
+        type="text" 
+        class="search-input form-control" 
+        placeholder="Buscar imágenes..." 
+        [(ngModel)]="searchQuery" 
+        (keyup.enter)="onSearch()"
+      />
+      <button class="btn btn-primary search-btn" (click)="onSearch()">
+<i class="fas fa-search"></i> Buscar
+
+      </button>
     </div>
   </div>
 </div>
+
+
+
+    <!-- Galería de imágenes -->
+    <div class="masonry-container">
+      <div class="masonry-card" *ngFor="let item of filteredData">
+        <a [routerLink]="['/imagen', item.id]">
+          <img *ngIf="item.imageUrl"
+               [src]="item.imageUrl"
+               [alt]="item.title"
+               class="img-fluid"
+               style="border-radius: 10px; margin-bottom: 10px; cursor: pointer;">
+        </a>
+        <div class="card-body text-start">
+          <h5 class="card-title">{{ item.title }}</h5>
+          <p class="card-text">{{ item.description }}</p>
+          <p>
+            <strong>Subido por:</strong>
+            <a 
+              [routerLink]="['/usuario', item.userId]" 
+              style="text-decoration: none; color: #E9A319; cursor: pointer;">
+              {{ item.user }}
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

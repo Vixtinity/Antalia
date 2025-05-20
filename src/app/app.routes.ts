@@ -24,6 +24,11 @@ export const routes: Routes = [
     loadComponent: () => import('./subir-elemento/subir-elemento.component').then(m => m.SubirElementoComponent)
   },
   {
+  path: 'usuario/:id',
+  component: UsuarioDetalleComponent,
+  data: { renderMode: 'client' }
+  },
+  {
     path: '**',
     redirectTo: ''
   },
