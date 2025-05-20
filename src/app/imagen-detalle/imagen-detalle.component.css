@@ -4,21 +4,22 @@
   --color-claro: #FAD59A;
   --color-muy-claro: #FCEFCB;
 }
-body
 
+/* CORREGIDO: Se quitó "body" mal puesto aquí */
 * {
   margin: 0;
   padding: 0;
-    background-color:#FCEFCB;
+  background-color: var(--color-muy-claro);
   box-sizing: border-box;
 }
 
 html, body {
   height: 100%;
   overflow: hidden;
-  background-color:#FCEFCB;
+  background-color: var(--color-muy-claro);
   font-family: 'Segoe UI', sans-serif;
 }
+
 
 /* Wrapper */
 .detalle-wrapper {
@@ -27,7 +28,6 @@ html, body {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  background: linear-gradient(to bottom right, var(--color-claro), var(--color-muy-claro));
 }
 
 /* Contenedor principal */

@@ -1,0 +1,44 @@
+:root {
+  --color-oscuro: #A86523;
+  --color-medio: #E9A319;
+  --color-claro: #FAD59A;
+  --color-muy-claro: #FCEFCB;
+}
+
+/* Estilos generales que siempre aplican */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-muy-claro);
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+/* Solo aplica centrado y layout flex si el body tiene esta clase */
+
+
+/* Aplica centrado solo cuando está la clase */
+
+/* Contenido dentro del router-outlet también centrado solo si tiene la clase */
+body.center-layout main,
+body.center-layout section.content {
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: auto;
+}
+
+.image-container img {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-medio);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1rem;
+}
+
