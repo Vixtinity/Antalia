@@ -4,6 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "concurrently \"ng serve\" \"node server.js\"",
+    "start-all": "npm install concurrently && npm start",
+    "postinstall": "npm install concurrently",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
