@@ -3,11 +3,12 @@ import { Router, NavigationEnd } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { RouterOutlet } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import { FooterComponent } from "./footer/footer.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NavbarComponent, RouterOutlet],
+  imports: [NavbarComponent, RouterOutlet, FooterComponent],
   template: `
     <main class="d-flex">
       <app-navbar class="sidebar"></app-navbar>
@@ -15,6 +16,7 @@ import { filter } from 'rxjs/operators';
         <router-outlet></router-outlet>
       </section>
     </main>
+    <app-footer></app-footer>
   `,
   styleUrls: ['./app.component.css'],
 })
